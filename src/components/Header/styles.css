@@ -1,0 +1,53 @@
+header#main-header {
+    width: 100%;
+    height: 60px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    height: 28px;
+    float: left;
+    margin: 10% 0;
+}
+
+.Search-box form {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1em;
+    display: flex;
+    margin: 1.15em 0;
+}
+
+.Search-box form input {
+    border: none;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background-color: rgb(250, 250, 250);
+    padding-left: 8px;
+    width: 20em;
+}
+
+.Search-box form input:focus {
+    outline: none;
+}
+
+.Search-box form button {
+    border: 0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+}
+
+.Chart {
+    border: 1px solid gray;
+    padding: 0.5em;
+    float: right;
+    margin: 0.8em auto;
+    text-decoration: none;
+}
+
+.Chart span img {
+    height: 1.1em;
+}
