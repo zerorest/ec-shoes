@@ -1,53 +1,81 @@
-header#main-header {
-    width: 100%;
-    height: 60px;
+.Header {
+    width: 1280px;
+    height: fit-content;
     background: #FFF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    min-width: 460px;
 }
 
 .Logo {
+    line-height: 0;
+}
+
+.Logo img {
     height: 28px;
-    float: left;
-    margin: 10% 0;
-}
-
-.Search-box form {
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 1em;
-    display: flex;
-    margin: 1.15em 0;
-}
-
-.Search-box form input {
-    border: none;
-    border-top-left-radius: 1em;
-    border-bottom-left-radius: 1em;
-    background-color: rgb(250, 250, 250);
-    padding-left: 8px;
-    width: 20em;
-}
-
-.Search-box form input:focus {
-    outline: none;
-}
-
-.Search-box form button {
-    border: 0;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-    background-color: rgb(244, 244, 244);
-    cursor: pointer;
 }
 
 .Chart {
+    width: 73px;
     border: 1px solid gray;
-    padding: 0.5em;
-    float: right;
-    margin: 0.8em auto;
+    padding: 0.2em 0.6em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.Chart span img {
+.Chart span:first-child {
+    display: flex;
     height: 1.1em;
+    width: 1.1em;
+}
+
+.Chart span:last-child {
+    background-color: #EBEBEB;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1280px){
+    .Header {
+        width: 1024px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .Header {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .Logo {
+        margin: 0 auto;
+    }
+
+    .Chart {
+        width: fit-content;
+        border: none;
+    }
+
+    .Chart span:last-child {
+        background-color: #3498DB;
+        color: white;
+        position: absolute;
+        right: 6px;
+        top: 2px;
+    }
+
+    .Chart span:first-child {
+        height: 1.5em;
+        width: 1.5em;
+    }
 }
