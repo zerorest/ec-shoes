@@ -1,0 +1,44 @@
+.Nav {
+    width: 1280px;
+    margin: auto;
+}
+
+.Nav ul {
+    width: 900px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 17px 20px;
+}
+
+.Nav ul li:hover {
+    color: dodgerblue;
+}
+
+.Nav ul li:first-child {
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+    .Nav {
+        width: 1024px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .Nav {
+        display: none;
+    }
+}

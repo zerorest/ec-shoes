@@ -1,11 +1,13 @@
 import React from 'react';
 import Search from './Search';
+import Menu from '../Menu';
 import Logo from '../../assets/img/Logo.png';
 import ChartIcon from '../../assets/img/ChartIcon.svg';
 import './styles.css';
 
 const Header = () => (
     <header className="Header">
+        <Menu />
         <a className="Logo" href="/">
             <img src={ Logo } alt="Logo"/>
         </a>
